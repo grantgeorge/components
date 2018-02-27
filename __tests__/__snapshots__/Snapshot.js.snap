@@ -2,7 +2,7 @@
 
 exports[`Storyshots Button simple text 1`] = `
 <button
-  className="Button sc-gzVnrw jDKWag"
+  className="Button sc-dnqmqq bVhXPH"
   onClick={[Function]}
 >
   Hello Button
@@ -11,7 +11,7 @@ exports[`Storyshots Button simple text 1`] = `
 
 exports[`Storyshots Button when urgent 1`] = `
 <button
-  className="Button sc-gzVnrw feGryx"
+  className="Button sc-dnqmqq fRLgjv"
   onClick={[Function]}
 >
   Cancel
@@ -20,7 +20,7 @@ exports[`Storyshots Button when urgent 1`] = `
 
 exports[`Storyshots Button with some emoji 1`] = `
 <button
-  className="Button sc-gzVnrw jDKWag"
+  className="Button sc-dnqmqq bVhXPH"
   onClick={[Function]}
 >
   😀 😎 👍 💯
@@ -68,4 +68,56 @@ exports[`Storyshots HeroImage Simple hero image 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots LoadingIndicator simple example 1`] = `
+<div
+  className="sc-gzVnrw dGIYfZ"
+>
+  <div
+    className="sc-iwsKbI dPWiyi"
+  />
+  <div
+    className="sc-gZMcBi ebtRmY"
+  />
+  <div
+    className="sc-gqjmRU cTErFR"
+  />
+  <div
+    className="sc-VigVT dFmMlF"
+  />
+  <div
+    className="sc-jTzLTM enuhco"
+  />
+  <div
+    className="sc-fjdhpX jNqnwR"
+  />
+  <div
+    className="sc-jzJRlG fEFjAE"
+  />
+  <div
+    className="sc-cSHVUG Hyerz"
+  />
+  <div
+    className="sc-kAzzGY hOJQGd"
+  />
+  <div
+    className="sc-chPdSV kNRVZc"
+  />
+  <div
+    className="sc-kgoBCf jBYbkL"
+  />
+  <div
+    className="sc-kGXeez klHZt"
+  />
+</div>
+`;
+
+exports[`Storyshots ThumbImage Album cover example 1`] = `
+<div
+  className="sc-htoDjs hZvwzw"
+  height="150px"
+  style={undefined}
+  width="150px"
+/>
 `;
