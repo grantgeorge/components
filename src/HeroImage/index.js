@@ -16,11 +16,16 @@ import Title from './Title'
 type Props = {
   title: string,
   imageUrl: string,
+  style: {},
 }
 
-const HeroImage = ({ title, imageUrl }: Props) => {
+const HeroImage = ({ title, imageUrl, style }: Props) => {
   return (
-    <HeroImageWrapper>
+    <HeroImageWrapper
+      style={{
+        ...style,
+      }}
+    >
       <Image imageUrl={imageUrl}>
         <BottomOverlay />
         <Title>{title}</Title>
