@@ -2,7 +2,7 @@
 
 exports[`Storyshots Button simple text 1`] = `
 <button
-  className="Button sc-ifAKCX iDqVcf"
+  className="Button sc-gzVnrw jDKWag"
   onClick={[Function]}
 >
   Hello Button
@@ -11,7 +11,7 @@ exports[`Storyshots Button simple text 1`] = `
 
 exports[`Storyshots Button when urgent 1`] = `
 <button
-  className="Button sc-ifAKCX ktYHFa"
+  className="Button sc-gzVnrw feGryx"
   onClick={[Function]}
 >
   Cancel
@@ -20,25 +20,49 @@ exports[`Storyshots Button when urgent 1`] = `
 
 exports[`Storyshots Button with some emoji 1`] = `
 <button
-  className="Button sc-ifAKCX iDqVcf"
+  className="Button sc-gzVnrw jDKWag"
   onClick={[Function]}
 >
   😀 😎 👍 💯
 </button>
 `;
 
+exports[`Storyshots Card Simple card example 1`] = `
+<div
+  className="sc-bdVaJa iYZZDf"
+  style={undefined}
+>
+  <p>
+    Hey there!
+  </p>
+</div>
+`;
+
+exports[`Storyshots Divider Simple example 1`] = `
+<div
+  className="sc-bwzfXH bkvAHx"
+  style={undefined}
+>
+  <strong
+    className="sc-htpNat ccgpGb"
+  >
+    Or
+  </strong>
+</div>
+`;
+
 exports[`Storyshots HeroImage Simple hero image 1`] = `
 <div
-  className="sc-htpNat gRxTMQ"
+  className="sc-EHOje jwLGqq"
 >
   <div
-    className="sc-bwzfXH chamWb"
+    className="sc-ifAKCX gMmqOp"
   >
     <div
-      className="sc-bdVaJa cHNzEY"
+      className="sc-bxivhb cAaJnm"
     />
     <div
-      className="sc-bxivhb gCuhYd"
+      className="sc-bZQynM eRcMnp"
     >
       flume
     </div>

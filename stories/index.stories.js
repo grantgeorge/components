@@ -4,7 +4,7 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Button, HeroImage } from '../src/index'
+import { Button, Card, Divider, HeroImage } from '../src/index'
 
 storiesOf('Button', module)
   .add('simple text', () => (
@@ -23,3 +23,11 @@ storiesOf('HeroImage', module).add('Simple hero image', () => (
     imageUrl="https://sts-app-assets.s3.amazonaws.com/flume-header-wide.jpeg"
   />
 ))
+
+storiesOf('Card', module).add('Simple card example', () => (
+  <Card>
+    <p>Hey there!</p>
+  </Card>
+))
+
+storiesOf('Divider', module).add('Simple example', () => <Divider>Or</Divider>)

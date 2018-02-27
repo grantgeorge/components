@@ -4,6 +4,8 @@ import React from 'react'
 
 import styled from 'styled-components'
 
+import Card from './Card'
+import Divider from './Divider'
 import HeroImage from './HeroImage'
 
 const StyledButton = styled.button`
@@ -27,4 +29,4 @@ const Button = ({ title, onClick, urgent }: Props) => (
   </StyledButton>
 )
 
-export { Button, HeroImage }
+export { Button, Card, Divider, HeroImage }
