@@ -1,0 +1,31 @@
+## Customize the test machine
+machine:
+  # timezone:
+  #  America/Los_Angeles
+  node:
+    version: 8.9.4
+
+## Configure test dependencies
+dependencies:
+  cache_directories:
+    - "node_modules"
+  override:
+    - npm i
+
+## Ensure mistakes weren't made
+#test:
+#  override:
+#   - npm test
+test:
+  override:
+    - npm run test
+    - npm run coveralls
+
+## Execute key deliverables
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - npm run build
+      - npm publish .
