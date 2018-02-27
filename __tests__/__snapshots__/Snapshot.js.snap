@@ -1,8 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots BlissInput disabled 1`] = `
+<label
+  className="sc-bwzfXH dLySTc"
+  htmlFor="disabled-input"
+  style={undefined}
+>
+  <input
+    autoFocus={undefined}
+    className="is-empty sc-bdVaJa kljVmq"
+    disabled={true}
+    name="disabled-input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="cant see me"
+    required={undefined}
+    type="text"
+  />
+  <span
+    className="sc-htpNat crOuwT"
+  >
+    <span
+      className="sc-bxivhb lgZwhc"
+    >
+      Cant do it
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Storyshots BlissInput simple input 1`] = `
+<label
+  className="sc-bwzfXH dLySTc"
+  htmlFor="simple-input"
+  style={undefined}
+>
+  <input
+    autoFocus={undefined}
+    className="is-empty sc-bdVaJa kljVmq"
+    disabled={undefined}
+    name="simple-input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Leeroy Jenkins"
+    required={undefined}
+    type="text"
+  />
+  <span
+    className="sc-htpNat crOuwT"
+  >
+    <span
+      className="sc-bxivhb lgZwhc"
+    >
+      Name
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Storyshots BlissInput with all the props 1`] = `
+<label
+  className="sc-bwzfXH dLySTc"
+  htmlFor="email-input"
+  style={undefined}
+>
+  <input
+    autoFocus={true}
+    className="is-empty sc-bdVaJa kljVmq"
+    disabled={undefined}
+    name="email-input"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="leeroy@pals4life.com"
+    required={undefined}
+    type="email"
+  />
+  <span
+    className="sc-htpNat crOuwT"
+  >
+    <span
+      className="sc-bxivhb lgZwhc"
+    >
+      Email
+    </span>
+  </span>
+</label>
+`;
+
 exports[`Storyshots Button simple text 1`] = `
 <button
-  className="Button sc-dnqmqq bVhXPH"
+  className="Button sc-VigVT mcseS"
   onClick={[Function]}
 >
   Hello Button
@@ -11,7 +101,7 @@ exports[`Storyshots Button simple text 1`] = `
 
 exports[`Storyshots Button when urgent 1`] = `
 <button
-  className="Button sc-dnqmqq fRLgjv"
+  className="Button sc-VigVT dYVVhK"
   onClick={[Function]}
 >
   Cancel
@@ -20,7 +110,7 @@ exports[`Storyshots Button when urgent 1`] = `
 
 exports[`Storyshots Button with some emoji 1`] = `
 <button
-  className="Button sc-dnqmqq bVhXPH"
+  className="Button sc-VigVT mcseS"
   onClick={[Function]}
 >
   😀 😎 👍 💯
@@ -29,7 +119,7 @@ exports[`Storyshots Button with some emoji 1`] = `
 
 exports[`Storyshots Card Simple card example 1`] = `
 <div
-  className="sc-bdVaJa iYZZDf"
+  className="sc-ifAKCX dCftLo"
   style={undefined}
 >
   <p>
@@ -40,11 +130,11 @@ exports[`Storyshots Card Simple card example 1`] = `
 
 exports[`Storyshots Divider Simple example 1`] = `
 <div
-  className="sc-bwzfXH bkvAHx"
+  className="sc-EHOje dRtGCZ"
   style={undefined}
 >
   <strong
-    className="sc-htpNat ccgpGb"
+    className="sc-bZQynM gHiNos"
   >
     Or
   </strong>
@@ -53,16 +143,16 @@ exports[`Storyshots Divider Simple example 1`] = `
 
 exports[`Storyshots HeroImage Simple hero image 1`] = `
 <div
-  className="sc-EHOje jwLGqq"
+  className="sc-dnqmqq gqQuRj"
 >
   <div
-    className="sc-ifAKCX gMmqOp"
+    className="sc-htoDjs atCfa"
   >
     <div
-      className="sc-bxivhb cAaJnm"
+      className="sc-gzVnrw kWJMCx"
     />
     <div
-      className="sc-bZQynM eRcMnp"
+      className="sc-iwsKbI faknkt"
     >
       flume
     </div>
@@ -72,50 +162,50 @@ exports[`Storyshots HeroImage Simple hero image 1`] = `
 
 exports[`Storyshots LoadingIndicator simple example 1`] = `
 <div
-  className="sc-gzVnrw dGIYfZ"
+  className="sc-gZMcBi huJRSc"
 >
   <div
-    className="sc-iwsKbI dPWiyi"
+    className="sc-jTzLTM kIZKII"
   />
   <div
-    className="sc-gZMcBi ebtRmY"
+    className="sc-fjdhpX kUAxSE"
   />
   <div
-    className="sc-gqjmRU cTErFR"
+    className="sc-jzJRlG gRbzpm"
   />
   <div
-    className="sc-VigVT dFmMlF"
+    className="sc-cSHVUG bufuPv"
   />
   <div
-    className="sc-jTzLTM enuhco"
+    className="sc-kAzzGY hfsqzL"
   />
   <div
-    className="sc-fjdhpX jNqnwR"
+    className="sc-chPdSV fiygyT"
   />
   <div
-    className="sc-jzJRlG fEFjAE"
+    className="sc-kgoBCf fIOgLR"
   />
   <div
-    className="sc-cSHVUG Hyerz"
+    className="sc-kGXeez brHubx"
   />
   <div
-    className="sc-kAzzGY hOJQGd"
+    className="sc-kpOJdX jmIaKu"
   />
   <div
-    className="sc-chPdSV kNRVZc"
+    className="sc-dxgOiQ WEnZR"
   />
   <div
-    className="sc-kgoBCf jBYbkL"
+    className="sc-ckVGcZ hhDdRm"
   />
   <div
-    className="sc-kGXeez klHZt"
+    className="sc-jKJlTe bexFnL"
   />
 </div>
 `;
 
 exports[`Storyshots ThumbImage Album cover example 1`] = `
 <div
-  className="sc-htoDjs hZvwzw"
+  className="sc-gqjmRU jNFonX"
   height="150px"
   style={undefined}
   width="150px"

@@ -4,6 +4,7 @@ import React from 'react'
 
 import styled from 'styled-components'
 
+import BlissInput from './BlissInput'
 import Card from './Card'
 import Divider from './Divider'
 import HeroImage from './HeroImage'
@@ -31,4 +32,12 @@ const Button = ({ title, onClick, urgent }: Props) => (
   </StyledButton>
 )
 
-export { Button, Card, Divider, HeroImage, LoadingIndicator, ThumbImage }
+export {
+  BlissInput,
+  Button,
+  Card,
+  Divider,
+  HeroImage,
+  LoadingIndicator,
+  ThumbImage,
+}

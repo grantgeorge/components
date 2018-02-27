@@ -5,6 +5,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import {
+  BlissInput,
   Button,
   Card,
   Divider,
@@ -12,6 +13,37 @@ import {
   LoadingIndicator,
   ThumbImage,
 } from '../src/index'
+
+storiesOf('BlissInput', module)
+  .add('simple input', () => (
+    <BlissInput
+      label="Name"
+      name="simple-input"
+      onChange={action(`changed input`)}
+      placeholder="Leeroy Jenkins"
+      type="text"
+    />
+  ))
+  .add('with all the props', () => (
+    <BlissInput
+      label="Email"
+      name="email-input"
+      onChange={action(`changed input`)}
+      placeholder="leeroy@pals4life.com"
+      type="email"
+      requried
+      autoFocus
+    />
+  ))
+  .add('disabled', () => (
+    <BlissInput
+      label="Cant do it"
+      name="disabled-input"
+      placeholder="cant see me"
+      type="text"
+      disabled
+    />
+  ))
 
 storiesOf('Button', module)
   .add('simple text', () => (

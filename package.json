@@ -21,7 +21,8 @@
   },
   "peerDependencies": {
     "react": "^16.2.0",
-    "styled-components": "^2.2.4"
+    "styled-components": "^2.2.4",
+    "classnames": "^2.2.5"
   },
   "keywords": [],
   "author": "",
