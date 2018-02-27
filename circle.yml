@@ -28,11 +28,17 @@ compile:
     - npm run build
 
 deployment:
-  feature:
-    branch: master
-    commands:
-      - ./config/npm-deploy-feature.sh
   production:
     tag: /(v)?[0-9]+(\.[0-9]+)*/
     commands:
       - npm publish .
+
+# deployment:
+#   feature:
+#     branch: master
+#     commands:
+#       - ./config/npm-deploy-feature.sh
+#   production:
+#     tag: /(v)?[0-9]+(\.[0-9]+)*/
+#     commands:
+#       - ./config/npm-deploy.sh
