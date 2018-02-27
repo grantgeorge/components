@@ -3,13 +3,21 @@
   "version": "0.0.4",
   "description": "STS Component Library",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/settheset/components"
+  },
   "scripts": {
     "clean-dist": "rm -rf ./dist",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "npm run clean-dist && NODE_ENV=production `npm bin`/babel ./src --out-dir ./dist",
     "test": "jest --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o .out"
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern dist --ignore-pattern flow-typed",
+    "lint:js": "npm run lint:eslint -- . ",
+    "lint:staged": "lint-staged"
   },
   "peerDependencies": {
     "react": "^16.2.0",
@@ -50,5 +58,8 @@
     "react-test-renderer": "^16.2.0",
     "styled-components": "^3.1.6"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "lint-staged": {
+    "*.js": "lint:eslint"
+  }
 }

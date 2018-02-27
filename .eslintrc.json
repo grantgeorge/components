@@ -10,10 +10,7 @@
   "plugins": ["flowtype", "react"],
   "parserOptions": {
     "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "sourceType": "module"
   },
   "rules": {
     "quote-props": "error",
@@ -39,7 +36,13 @@
         "asyncArrow": "never"
       }
     ],
-    "generator-star-spacing": ["error", { "before": true, "after": false }]
+    "generator-star-spacing": ["error", { "before": true, "after": false }],
+    "space-after-keywords": "off",
+    "no-reserved-keys": "off",
+    "no-wrap-func": "off",
+    "space-return-throw-case": "off",
+    "spaced-line-comment": "off",
+    "keyword-spacing": [2, { "before": true, "after": true }]
   },
   "settings": {
     "import/resolver": {
