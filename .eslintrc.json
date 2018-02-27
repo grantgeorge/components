@@ -1,0 +1,54 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-react", "plugin:flowtype/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": ["flowtype", "react"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "quote-props": "error",
+    "arrow-parens": ["error", "always"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "comma-dangle": ["error", "always-multiline"],
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/forbid-prop-types": [0],
+    "react/require-default-props": [0],
+    "global-require": [0],
+    "flowtype/delimiter-dangle": ["error", "always-multiline"],
+    "no-debugger": [0],
+    "space-before-function-paren": [
+      2,
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "never"
+      }
+    ],
+    "generator-star-spacing": ["error", { "before": true, "after": false }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["usr/local/share/global_modules", "node_modules", "src"]
+      }
+    },
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}

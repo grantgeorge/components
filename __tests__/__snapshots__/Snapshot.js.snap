@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button simple text 1`] = `
+<button
+  className="Button sc-ifAKCX iDqVcf"
+  onClick={[Function]}
+>
+  Hello Button
+</button>
+`;
+
+exports[`Storyshots Button when urgent 1`] = `
+<button
+  className="Button sc-ifAKCX ktYHFa"
+  onClick={[Function]}
+>
+  Cancel
+</button>
+`;
+
+exports[`Storyshots Button with some emoji 1`] = `
+<button
+  className="Button sc-ifAKCX iDqVcf"
+  onClick={[Function]}
+>
+  😀 😎 👍 💯
+</button>
+`;
+
+exports[`Storyshots HeroImage Simple hero image 1`] = `
+<div
+  className="sc-htpNat gRxTMQ"
+>
+  <div
+    className="sc-bwzfXH chamWb"
+  >
+    <div
+      className="sc-bdVaJa cHNzEY"
+    />
+    <div
+      className="sc-bxivhb gCuhYd"
+    >
+      flume
+    </div>
+  </div>
+</div>
+`;
