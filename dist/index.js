@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ThumbImage = exports.LoadingIndicator = exports.HeroImage = exports.Divider = exports.Card = exports.Button = undefined;
+exports.ThumbImage = exports.LoadingIndicator = exports.HeroImage = exports.Divider = exports.Card = exports.Button = exports.BlissInput = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n  background-color: ', ';\n  color: white;\n  padding: 4px 10px;\n  font-size: 14px;\n  border: none;\n  border-radius: 4px;\n'], ['\n  background-color: ', ';\n  color: white;\n  padding: 4px 10px;\n  font-size: 14px;\n  border: none;\n  border-radius: 4px;\n']);
 
@@ -14,6 +14,10 @@ var _react2 = _interopRequireDefault(_react);
 var _styledComponents = require('styled-components');
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _BlissInput = require('./BlissInput');
+
+var _BlissInput2 = _interopRequireDefault(_BlissInput);
 
 var _Card = require('./Card');
 
@@ -54,6 +58,7 @@ var Button = function Button(_ref) {
   );
 };
 
+exports.BlissInput = _BlissInput2.default;
 exports.Button = Button;
 exports.Card = _Card2.default;
 exports.Divider = _Divider2.default;
