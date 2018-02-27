@@ -147,6 +147,7 @@ exports[`Storyshots Divider Simple example 1`] = `
 exports[`Storyshots HeroImage Simple hero image 1`] = `
 <div
   className="sc-iwsKbI Xxqfn"
+  style={Object {}}
 >
   <div
     className="sc-dnqmqq AumSF"
