@@ -17,6 +17,8 @@ export type Props = {
   style?: Object,
   type?: string,
   disabled?: boolean,
+  mountComponent?: boolean,
+  id: string,
 
   onChange?: () => void,
 }
@@ -68,21 +70,27 @@ class BlissInput extends PureComponent<Props, State> {
   render() {
     return (
       <Label style={this.props.style} htmlFor={this.props.name}>
-        <Input
-          name={this.props.name}
-          className={classNames({
-            'is-focused': this.state.isFocused,
-            'is-empty': this.state.isEmpty,
-          })}
-          placeholder={this.props.placeholder}
-          onFocus={this.onFocus}
-          onBlur={this.onBlur}
-          onChange={this.onChange}
-          autoFocus={this.props.autoFocus}
-          required={this.props.required}
-          type={this.props.type || 'text'}
-          disabled={this.props.disabled}
-        />
+        {this.props.mountComponent ? (
+          <div id={this.props.id} />
+        ) : (
+          <Input
+            name={this.props.name}
+            className={classNames({
+              'is-focused': this.state.isFocused,
+              'is-empty': this.state.isEmpty,
+            })}
+            placeholder={this.props.placeholder}
+            onFocus={this.onFocus}
+            onBlur={this.onBlur}
+            onChange={this.onChange}
+            autoFocus={this.props.autoFocus}
+            required={this.props.required}
+            type={this.props.type || 'text'}
+            disabled={this.props.disabled}
+            id={this.props.id}
+          />
+        )}
+
         <Span1>
           <Span2>{this.props.label}</Span2>
         </Span1>
