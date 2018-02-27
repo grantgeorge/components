@@ -4,6 +4,7 @@ import React, { PureComponent } from 'react'
 import classNames from 'classnames'
 
 import Input from './Input'
+import Field from './Field'
 import Label from './Label'
 import Span1 from './Span1'
 import Span2 from './Span2'
@@ -71,7 +72,7 @@ class BlissInput extends PureComponent<Props, State> {
     return (
       <Label style={this.props.style} htmlFor={this.props.name}>
         {this.props.mountComponent ? (
-          <div id={this.props.id} />
+          <Field id={this.props.id} />
         ) : (
           <Input
             name={this.props.name}
