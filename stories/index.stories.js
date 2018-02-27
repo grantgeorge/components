@@ -4,7 +4,14 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Button, Card, Divider, HeroImage } from '../src/index'
+import {
+  Button,
+  Card,
+  Divider,
+  HeroImage,
+  LoadingIndicator,
+  ThumbImage,
+} from '../src/index'
 
 storiesOf('Button', module)
   .add('simple text', () => (
@@ -31,3 +38,17 @@ storiesOf('Card', module).add('Simple card example', () => (
 ))
 
 storiesOf('Divider', module).add('Simple example', () => <Divider>Or</Divider>)
+
+storiesOf('LoadingIndicator', module).add('simple example', () => (
+  <LoadingIndicator />
+))
+
+storiesOf('ThumbImage', module).add('Album cover example', () => (
+  <ThumbImage
+    imageUrl="https://i.scdn.co/image/9dcbd30dbe0c621cbaeae427cf80eff9877b4fcd"
+    width="150px"
+    height="150px"
+    minWidth="150px"
+    minHeight="150px"
+  />
+))

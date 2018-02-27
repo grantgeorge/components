@@ -7,6 +7,8 @@ import styled from 'styled-components'
 import Card from './Card'
 import Divider from './Divider'
 import HeroImage from './HeroImage'
+import LoadingIndicator from './LoadingIndicator'
+import ThumbImage from './ThumbImage'
 
 const StyledButton = styled.button`
   background-color: ${(props) => (props.urgent ? 'red' : '#007dff')};
@@ -29,4 +31,4 @@ const Button = ({ title, onClick, urgent }: Props) => (
   </StyledButton>
 )
 
-export { Button, Card, Divider, HeroImage }
+export { Button, Card, Divider, HeroImage, LoadingIndicator, ThumbImage }
