@@ -27,7 +27,7 @@ const HeroImage = ({ title, imageUrl, style }: Props) => {
       }}
     >
       <Image imageUrl={imageUrl}>
-        <BottomOverlay />
+        {title ? <BottomOverlay /> : null}
         <Title>{title}</Title>
       </Image>
     </HeroImageWrapper>
