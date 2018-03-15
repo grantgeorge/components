@@ -13,7 +13,7 @@ const Title = styled.div`
   text-align: center;
   font-size: 2.2rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 568px) {
     line-height: 1;
     font-size: 4em;
     bottom: 15px;
