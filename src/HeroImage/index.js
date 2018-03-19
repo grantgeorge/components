@@ -14,14 +14,16 @@ import HeroImageWrapper from './HeroImageWrapper'
 import Title from './Title'
 
 type Props = {
+  className?: string,
   title: string,
   imageUrl: string,
-  style: {},
+  style?: {},
 }
 
-const HeroImage = ({ title, imageUrl, style }: Props) => {
+const HeroImage = ({ className, title, imageUrl, style }: Props) => {
   return (
     <HeroImageWrapper
+      className={className}
       style={{
         ...style,
       }}

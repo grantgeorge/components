@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const HeroImage = styled.div`
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 33%;
   background-size: cover;
   position: relative;
   width: 100%;

@@ -14,7 +14,7 @@ const ThumbImage = styled.div`
   background-image: url(${(props) => props.imageUrl});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   width: ${(props) => (props.width ? props.width : '100%')};
   height: ${(props) => (props.height ? props.height : '100%')};
   border-radius: 4px;
