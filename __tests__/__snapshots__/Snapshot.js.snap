@@ -4,7 +4,6 @@ exports[`Storyshots BlissInput disabled 1`] = `
 <label
   className="sc-htpNat dBsMvx"
   htmlFor="disabled-input"
-  style={undefined}
 >
   <input
     autoFocus={undefined}
@@ -17,6 +16,7 @@ exports[`Storyshots BlissInput disabled 1`] = `
     onFocus={[Function]}
     placeholder="cant see me"
     required={undefined}
+    style={undefined}
     type="text"
   />
   <span
@@ -35,7 +35,6 @@ exports[`Storyshots BlissInput simple input 1`] = `
 <label
   className="sc-htpNat dBsMvx"
   htmlFor="simple-input"
-  style={undefined}
 >
   <input
     autoFocus={undefined}
@@ -48,6 +47,7 @@ exports[`Storyshots BlissInput simple input 1`] = `
     onFocus={[Function]}
     placeholder="Leeroy Jenkins"
     required={undefined}
+    style={undefined}
     type="text"
   />
   <span
@@ -66,7 +66,6 @@ exports[`Storyshots BlissInput with all the props 1`] = `
 <label
   className="sc-htpNat dBsMvx"
   htmlFor="email-input"
-  style={undefined}
 >
   <input
     autoFocus={true}
@@ -79,6 +78,7 @@ exports[`Storyshots BlissInput with all the props 1`] = `
     onFocus={[Function]}
     placeholder="leeroy@pals4life.com"
     required={undefined}
+    style={undefined}
     type="email"
   />
   <span
@@ -150,7 +150,7 @@ exports[`Storyshots HeroImage Simple hero image 1`] = `
   style={Object {}}
 >
   <div
-    className="sc-dnqmqq eNpuyZ"
+    className="sc-dnqmqq jnFTpQ"
   >
     <div
       className="sc-htoDjs bUHgQc"
@@ -209,7 +209,7 @@ exports[`Storyshots LoadingIndicator simple example 1`] = `
 
 exports[`Storyshots ThumbImage Album cover example 1`] = `
 <div
-  className="sc-VigVT QBsmb"
+  className="sc-VigVT dHCvjH"
   height="150px"
   style={undefined}
   width="150px"
