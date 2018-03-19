@@ -10,6 +10,7 @@ import Span1 from './Span1'
 import Span2 from './Span2'
 
 export type Props = {
+  className?: string,
   name: string,
   placeholder: string,
   label: string,
@@ -76,7 +77,7 @@ class BlissInput extends PureComponent<Props, State> {
         ) : (
           <Input
             name={this.props.name}
-            className={classNames({
+            className={classNames(this.props.className, {
               'is-focused': this.state.isFocused,
               'is-empty': this.state.isEmpty,
             })}
