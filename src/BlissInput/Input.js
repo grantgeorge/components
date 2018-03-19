@@ -16,7 +16,7 @@ export const Input = styled.input`
   transition: opacity 200ms ease-in-out;
   font-weight: 400;
 
-  &:disabled: {
+  &:disabled {
     cursor: not-allowed;
     color: rgba(119, 119, 119, 0.65);
   }
