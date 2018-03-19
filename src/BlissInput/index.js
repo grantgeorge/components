@@ -70,7 +70,7 @@ class BlissInput extends PureComponent<Props, State> {
 
   render() {
     return (
-      <Label style={this.props.style} htmlFor={this.props.name}>
+      <Label htmlFor={this.props.name}>
         {this.props.mountComponent ? (
           <Field id={this.props.id} />
         ) : (
@@ -89,6 +89,7 @@ class BlissInput extends PureComponent<Props, State> {
             type={this.props.type || 'text'}
             disabled={this.props.disabled}
             id={this.props.id}
+            style={this.props.style}
           />
         )}
 
