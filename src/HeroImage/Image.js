@@ -19,7 +19,7 @@ const HeroImage = styled.div`
   }
 
   @media (min-width: 1400px) {
-    padding-top: 10%;
+    padding-top: 25%;
   }
 `
 
