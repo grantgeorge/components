@@ -16,6 +16,11 @@ const HeroImage = styled.div`
   @media (min-width: 568px) {
     height: 400px;
   }
+
+  @media (min-width: 1400px) {
+    height: 600px;
+    background-position: center top;
+  }
 `
 
 export default HeroImage
