@@ -1,6 +1,6 @@
 {
   "name": "sts-components",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "description": "STS Component Library",
   "main": "dist/index.js",
   "repository": {
