@@ -59,7 +59,9 @@ storiesOf('Button', module)
 storiesOf('HeroImage', module).add('Simple hero image', () => (
   <HeroImage
     title="flume"
-    imageUrl="https://sts-app-assets.s3.amazonaws.com/flume-header-wide.jpeg"
+    imageUrl="https://sts-app-assets.s3.amazonaws.com/5c000b15768bd1ce9d6f8f8d36ad851d"
+    xPos="50%"
+    yPos="0%"
   />
 ))
 

@@ -17,10 +17,19 @@ type Props = {
   className?: string,
   title: string,
   imageUrl: string,
+  xPos?: string,
+  yPos?: string,
   style?: {},
 }
 
-const HeroImage = ({ className, title, imageUrl, style }: Props) => {
+const HeroImage = ({
+  className,
+  title,
+  imageUrl,
+  xPos,
+  yPos,
+  style,
+}: Props) => {
   return (
     <HeroImageWrapper
       className={className}
@@ -28,7 +37,7 @@ const HeroImage = ({ className, title, imageUrl, style }: Props) => {
         ...style,
       }}
     >
-      <Image imageUrl={imageUrl}>
+      <Image imageUrl={imageUrl} xPos={xPos} yPos={yPos}>
         {title ? <BottomOverlay /> : null}
         <Title>{title}</Title>
       </Image>
