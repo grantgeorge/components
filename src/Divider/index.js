@@ -35,7 +35,7 @@ type Props = {
 const Divider = ({ children, className, style }: Props) => {
   return (
     <StyledDivider className={className} style={style}>
-      <DividerTitle>{children}</DividerTitle>
+      {children ? (<DividerTitle>{children}</DividerTitle>) : (null)}
     </StyledDivider>
   )
 }
