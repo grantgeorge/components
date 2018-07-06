@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlissInput/> should render properly 1`] = `
+<styled.label>
+  <styled.input
+    className="is-empty"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    type="text"
+  />
+  <styled.span>
+    <styled.span />
+  </styled.span>
+</styled.label>
+`;

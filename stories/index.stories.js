@@ -73,6 +73,8 @@ storiesOf('Card', module).add('Simple card example', () => (
 
 storiesOf('Divider', module).add('Simple example', () => <Divider>Or</Divider>)
 
+storiesOf('Divider', module).add('No Children', () => <Divider />)
+
 storiesOf('LoadingIndicator', module).add('simple example', () => (
   <LoadingIndicator />
 ))

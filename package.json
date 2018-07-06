@@ -1,6 +1,6 @@
 {
   "name": "sts-components",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "STS Component Library",
   "main": "dist/index.js",
   "repository": {
@@ -25,6 +25,21 @@
     "styled-components": "3.4.0-0",
     "classnames": "2.2.5"
   },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "app"
+    ],
+    "moduleNameMapper": {
+      ".*\\.(css|less|styl|scss|sass)$": "<rootDir>/internals/mocks/cssModule.js",
+      ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/image.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/internals/testing/test-bundler.js",
+    "testRegex": "tests/.*\\.test\\.js$",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -41,6 +56,7 @@
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-1": "6.24.1",
     "coveralls": "3.0.2",
+    "enzyme-to-json": "3.3.4",
     "eslint": "4.19.1",
     "eslint-config-standard": "11.0.0",
     "eslint-config-standard-react": "6.0.0",
@@ -58,9 +74,10 @@
     "react": "16.4.1",
     "react-dom": "16.4.1",
     "react-test-renderer": "16.4.1",
-    "styled-components": "3.4.0-0"
+    "styled-components": "3.4.0-0",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1"
   },
-  "dependencies": {},
   "lint-staged": {
     "*.js": "lint:eslint"
   },
