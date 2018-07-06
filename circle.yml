@@ -1,45 +1,45 @@
-## Customize the test machine
-machine:
-  # timezone:
-  #  America/Los_Angeles
-  node:
-    version: 10.1.0
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10.4.1
 
-## Configure test dependencies
-dependencies:
-  pre:
-    - 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
-  cache_directories:
-    - "node_modules"
-  override:
-    - npm i
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
 
-## Ensure mistakes weren't made
-test:
-  override:
-    - rm -rf $CIRCLE_ARTIFACTS/coverage
-    - npm run lint
-    - npm run test:coverage
-    - cp -r coverage $CIRCLE_ARTIFACTS
-    - npm run coveralls
+    working_directory: ~/repo
 
-## Execute key deliverables
-compile:
-  override:
-    - npm run build
+    parallelism: 2
 
-deployment:
-  production:
-    tag: /(v)?[0-9]+(\.[0-9]+)*/
-    commands:
-      - npm publish .
+    steps:
+      - checkout
 
-# deployment:
-#   feature:
-#     branch: master
-#     commands:
-#       - ./config/npm-deploy-feature.sh
-#   production:
-#     tag: /(v)?[0-9]+(\.[0-9]+)*/
-#     commands:
-#       - ./config/npm-deploy.sh
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      # run tests!
+      - run: npm run test:coverage
+
+      # run lint
+      - run: npm run lint
+
+      # coveralls
+      - run: npm run coveralls
