@@ -19,7 +19,7 @@ test:
   override:
     - rm -rf $CIRCLE_ARTIFACTS/coverage
     - npm run lint
-    - npm run test
+    - npm run test:coverage
     - cp -r coverage $CIRCLE_ARTIFACTS
     - npm run coveralls
 
