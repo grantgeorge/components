@@ -15,7 +15,7 @@ import {
 } from '../src/index'
 
 storiesOf('BlissInput', module)
-  .add('simple input', () => (
+  .add('Simple input', () => (
     <BlissInput
       label="Name"
       name="simple-input"
@@ -24,7 +24,7 @@ storiesOf('BlissInput', module)
       type="text"
     />
   ))
-  .add('with all the props', () => (
+  .add('With all the props', () => (
     <BlissInput
       label="Email"
       name="email-input"
@@ -35,7 +35,7 @@ storiesOf('BlissInput', module)
       autoFocus
     />
   ))
-  .add('disabled', () => (
+  .add('Disabled', () => (
     <BlissInput
       label="Cant do it"
       name="disabled-input"
@@ -46,13 +46,13 @@ storiesOf('BlissInput', module)
   ))
 
 storiesOf('Button', module)
-  .add('simple text', () => (
+  .add('Simple text', () => (
     <Button title="Hello Button" onClick={action('clicked Hello Button')} />
   ))
-  .add('with some emoji', () => (
+  .add('With some emoji', () => (
     <Button title="😀 😎 👍 💯" onClick={action('clicked Emojis')} />
   ))
-  .add('when urgent', () => (
+  .add('When urgent', () => (
     <Button title="Cancel" onClick={action('Cancel clicked')} urgent />
   ))
 
@@ -72,10 +72,9 @@ storiesOf('Card', module).add('Simple card example', () => (
 ))
 
 storiesOf('Divider', module).add('Simple example', () => <Divider>Or</Divider>)
+  .add('No children', () => <Divider />)
 
-storiesOf('Divider', module).add('No Children', () => <Divider />)
-
-storiesOf('LoadingIndicator', module).add('simple example', () => (
+storiesOf('LoadingIndicator', module).add('Simple example', () => (
   <LoadingIndicator />
 ))
 
