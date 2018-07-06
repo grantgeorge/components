@@ -12,7 +12,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "npm run clean-dist && NODE_ENV=production `npm bin`/babel ./src --out-dir ./dist",
     "start": "start-storybook -p 6006",
-    "test": "jest --coverage",
+    "test": "cross-env NODE_ENV=test jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "lint": "npm run lint:js",
@@ -56,6 +56,8 @@
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-1": "6.24.1",
     "coveralls": "3.0.2",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.4",
     "eslint": "4.19.1",
     "eslint-config-standard": "11.0.0",
@@ -74,9 +76,8 @@
     "react": "16.4.1",
     "react-dom": "16.4.1",
     "react-test-renderer": "16.4.1",
-    "styled-components": "3.4.0-0",
-    "enzyme": "3.3.0",
-    "enzyme-adapter-react-16": "1.1.1"
+    "cross-env": "5.2.0",
+    "styled-components": "3.4.0-0"
   },
   "lint-staged": {
     "*.js": "lint:eslint"
@@ -84,5 +85,6 @@
   "engines": {
     "npm": ">=6.0.0",
     "node": ">=10.0.0"
-  }
+  },
+
 }
