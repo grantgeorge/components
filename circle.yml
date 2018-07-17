@@ -3,7 +3,7 @@ machine:
   # timezone:
   #  America/Los_Angeles
   node:
-    version: 8.9.4
+    version: 10.6.0
 
 ## Configure test dependencies
 dependencies:
